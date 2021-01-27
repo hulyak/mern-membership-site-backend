@@ -1,7 +1,7 @@
 export const createGroupRoute = {
     method: 'post',
     path: '/groups',
-    handler : async (req, res) => {
+    handler: async (req, res) => {
 
     }
 }

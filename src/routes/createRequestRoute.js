@@ -1,7 +1,7 @@
-export const createRequestsRoute = {
+export const createRequestRoute = {
     method: 'post',
     path: '/groups/:id/requests',
-    handler : async (req, res) => {
+    handler: async (req, res) => {
 
     }
 }
