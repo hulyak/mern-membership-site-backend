@@ -6,7 +6,7 @@ export const getMemberPopulatedGroup = async (groupId) => {
     const messagesForGroup = await getMessagesForGroup(groupId)
     const populatedGroups = {
         ...group,
-        messagesForGroup
+        messages: messagesForGroup
     }
     return populatedGroups;
 } 
