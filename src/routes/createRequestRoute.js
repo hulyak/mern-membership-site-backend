@@ -11,7 +11,7 @@ export const createRequestRoute = {
     const user = await admin.auth().verifyIdToken(token);
 
     if (!token || !user) {
-      res.status(401).json({ message: 'Must be logged in to submit requests' });
+      res.status(400).json({ message: 'Must be logged in to submit requests' });
     }
     await createJoinRequest(id, user.user_id); // group id, user id
     res.status(200).json({ message: 'Success' });
