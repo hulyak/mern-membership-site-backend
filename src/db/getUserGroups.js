@@ -8,7 +8,7 @@ export const getUserGroups = async (userId) => {
   const groupOwners = await Promise.all(
     groups.map((group) => getUser(group.ownerId))
   );
-  const populatedGroups = await groups.map((group, i) => ({
+  const populatedGroups = groups.map((group, i) => ({
     ...group,
     owner: groupOwners[i],
   }));

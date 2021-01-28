@@ -9,7 +9,7 @@ export const getMessagesForGroup = async (groupId) => {
     messages.map((message) => getUser(message.userId))
   );
 
-  const populatedMessages = await messages.map((message) =>(message, i) => ({
+  const populatedMessages = messages.map((message) =>(message, i) => ({
    ...message,
     userName: usersForMessages[i].fullName,
   }));

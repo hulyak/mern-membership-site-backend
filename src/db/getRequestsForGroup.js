@@ -9,7 +9,7 @@ export const getRequestsForGroup = async (groupId) => {
     requests.map((request) => getUser(request.userId))
   );
 
-  const populatedRequests = await requests.map((request) =>(request, i) => ({
+  const populatedRequests =requests.map((request) =>(request, i) => ({
    ...request,
     userName: usersForRequests[i].fullName,
   }));
