@@ -1,5 +1,8 @@
 export { db } from './db';
 export { getAllGroups } from './getAllGroups';
 export { getUserGroups } from './getUserGroups';
-export { createJoinRequest } from './createJoinRequest'; 
+export { createJoinRequest } from './createJoinRequest';
 export { createGroup } from './createGroup';
+export { getGroup } from './getGroup';
+export { getMemberPopulatedGroup } from './getMemberPopulatedGroup';
+export { getOwnerPopulatedGroup } from './getOwnerPopulatedGroup';
